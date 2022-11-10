@@ -1,0 +1,4 @@
+.Settings input:hover {
+	background: rgb(248, 250, 252);
+	cursor: pointer !important;
+}

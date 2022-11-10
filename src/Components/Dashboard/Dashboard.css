@@ -1,0 +1,23 @@
+.Dashboard {
+	display: grid;
+	grid-template-columns: 280px minmax(800px, auto);
+	height: 100vh;
+	overflow: hidden;
+}
+
+.Dashboard .Content {
+	height: 100vh;
+	overflow: auto;
+}
+
+@media only screen and (max-width: 1680px) {
+	.Dashboard {
+		grid-template-columns: 220px minmax(800px, auto);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.Dashboard {
+		display: block;
+	}
+}

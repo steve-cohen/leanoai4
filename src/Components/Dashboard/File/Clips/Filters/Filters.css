@@ -1,0 +1,108 @@
+.Filters {
+	border-bottom: 1px solid rgb(226, 227, 229);
+	color: rgb(0, 102, 204);
+	fill: rgb(0, 102, 204);
+	font-size: 15px;
+	font-weight: 500;
+	max-width: calc(100% - 10vw);
+	overflow-x: auto;
+	padding: 0 5vw;
+}
+
+.Filters span {
+	cursor: pointer;
+	line-height: 50px;
+}
+
+/* .Filters span:hover {
+	color: rgb(32, 17, 59);
+	fill: rgb(32, 17, 59);
+} */
+
+/* .Clips .Filters .Duration input {
+	all: initial;
+	all: inherit;
+	border: 1px solid rgb(0, 102, 204);
+	border-radius: 2px;
+	cursor: text;
+	height: 24px;
+	margin: 17px 0;
+	text-align: center;
+	width: 40px;
+} */
+
+.Filters svg {
+	all: initial;
+	fill: inherit;
+	cursor: pointer;
+	display: inline;
+	height: 10px;
+	padding: 0 12px 0 6px;
+	transition: transform 0.2s;
+	width: 10px;
+}
+
+.Filters .Duration .Label {
+	transition: color 0.2s, fill 0.2s;
+}
+
+.Filters .Duration .Label:hover {
+	color: rgb(32, 17, 59);
+	fill: rgb(32, 17, 59);
+}
+
+.Filters .Sort {
+	margin-right: 24px;
+	/* position: relative; */
+}
+
+.Filters .Sort .Label {
+	transition: color 0.2s, fill 0.2s;
+}
+
+.Filters .Sort .Label:hover {
+	color: rgb(32, 17, 59);
+	fill: rgb(32, 17, 59);
+}
+
+.Filters .Sort .ShowSort {
+	background: white;
+	border: 1px solid rgb(226, 227, 229);
+	border-radius: 4px;
+	box-shadow: rgb(136 152 170 / 10%) 0px 0px 0px 1px, rgb(49 49 93 / 10%) 0px 15px 35px 0px,
+		rgb(0 0 0 / 8%) 0px 5px 15px 0px;
+	padding: 8px 0;
+	position: absolute;
+	left: 5vw;
+	top: 50px;
+	z-index: 1000;
+}
+
+.Filters .Sort .ShowSort div {
+	line-height: 30px;
+	padding: 0 12px;
+}
+
+.Filters .Sort .ShowSort div:hover {
+	color: rgb(32, 17, 59);
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+	.Filters {
+		border-bottom: none;
+		box-shadow: 0 2px 5px 0 rgb(59 65 94 / 10%), 0 1px 1px 0 rgb(0 0 0 / 7%);
+		color: rgb(105, 115, 134);
+		fill: rgb(105, 115, 134);
+		font-size: 13px;
+		font-weight: 500;
+		max-width: calc(100% - 8vw);
+		overflow-x: auto;
+		padding: 0 4vw;
+		text-transform: uppercase;
+	}
+
+	.Filters .Sort .ShowSort {
+		left: 4vw;
+	}
+}

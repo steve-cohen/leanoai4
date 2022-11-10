@@ -1,0 +1,109 @@
+.Transcript {
+	background: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(226, 227, 229);
+	padding: 5vw;
+}
+
+.Transcript table {
+	border-spacing: 0;
+	color: rgb(76, 86, 107);
+	line-height: 22px;
+}
+
+.Transcript table tbody tr td {
+	padding: 8px 10px;
+	vertical-align: top;
+}
+
+.Transcript table tbody tr td:first-of-type {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	font-weight: 500;
+	padding: 14px 4px 14px 26px;
+	white-space: pre;
+}
+
+.Transcript table tbody tr td:last-of-type {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 14px 26px 14px 4px;
+}
+
+.Transcript table tbody tr .Paragraph {
+	text-align: justify;
+	white-space: pre-line;
+}
+
+.Transcript .Head {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.Transcript .Head .Buttons {
+	border: 1px solid rgb(227, 227, 227);
+	border-radius: 6px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+	color: rgb(0, 102, 204);
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: 0.2s;
+	width: fit-content;
+}
+
+.Transcript .Head .Buttons:hover {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.Transcript .Head .Buttons span {
+	display: inline-block;
+	padding: 8px 6px;
+	transition: 0.2s;
+}
+
+.Transcript .Head .Buttons span:first-of-type {
+	padding-left: 12px;
+}
+
+.Transcript .Head .Buttons span:hover {
+	color: rgb(32, 17, 59);
+}
+
+.Transcript .Head .Buttons span:last-of-type {
+	padding-right: 12px;
+}
+
+.Transcript .Head .Title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+	.Transcript {
+		/* padding: 10vw 5vw; */
+		width: 100%;
+	}
+
+	.Transcript table tbody tr td {
+		display: block;
+	}
+
+	.Transcript table tbody tr td:first-of-type {
+		border-radius: 0;
+		padding: 14px 26px 4px 26px;
+	}
+
+	.Transcript table tbody tr td:last-of-type {
+		border-radius: 0;
+		padding: 4px 26px 14px 26px;
+	}
+
+	.Transcript .Head {
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+}

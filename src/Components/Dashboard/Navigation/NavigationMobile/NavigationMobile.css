@@ -1,0 +1,49 @@
+.NavigationMobile {
+	background-color: white;
+	box-shadow: 0 2px 5px 0 rgb(59 65 94 / 10%), 0 1px 1px 0 rgb(0 0 0 / 7%);
+	position: sticky;
+	top: 0;
+	width: 100vw;
+}
+
+.NavigationMobile label {
+	color: rgb(105, 115, 134);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 48px;
+	padding-left: 4vw;
+	position: absolute;
+	text-transform: uppercase;
+
+	width: 50%;
+	z-index: -1;
+}
+
+.NavigationMobile label span {
+	display: inline-block;
+	max-width: calc(100% - 15px);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: fit-content;
+	vertical-align: middle;
+}
+
+.NavigationMobile label svg {
+	all: initial;
+	fill: rgb(105, 115, 134);
+	filter: none;
+	display: inline-block;
+	height: 11px;
+	opacity: 0.8;
+	padding-left: 4px;
+	vertical-align: middle;
+	width: 11px;
+}
+
+.NavigationMobile select {
+	height: 48px;
+	padding-left: 4vw;
+	opacity: 0;
+	width: 50%;
+}

@@ -1,0 +1,98 @@
+.Warnings {
+	background: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(226, 227, 229);
+	line-height: 22px;
+	padding: 5vw;
+}
+
+.Warnings table {
+	border-spacing: 0;
+	color: rgb(76, 86, 107);
+	text-align: left;
+}
+
+.Warnings table tbody tr .Label {
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.Warnings table tbody tr td {
+	padding: 8px 10px;
+	vertical-align: top;
+}
+
+.Warnings table tbody tr td:first-of-type {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+
+.Warnings table tbody tr td:last-of-type {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.Warnings table thead tr th {
+	color: rgb(32, 17, 59);
+	font-weight: 500;
+	padding: 6px 10px;
+}
+
+.Warnings table .Right {
+	text-align: right;
+}
+
+.Warnings .Head {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.Warnings .Head .Title {
+	color: rgb(32, 17, 59);
+	font-size: 20px;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+	.Warnings {
+		padding: 10vw 5vw;
+		width: 100%;
+	}
+
+	.Warnings table thead {
+		display: none;
+	}
+
+	.Warnings .Head {
+		padding-left: 26px;
+	}
+
+	.Warnings .End,
+	.Warnings .Label,
+	.Warnings .Start {
+		border-radius: 0;
+		display: inline-block;
+		font-weight: 500;
+		padding: 14px;
+	}
+
+	.Warnings .Text {
+		border-radius: 0;
+		display: block;
+		padding: 0 26px 14px 26px;
+		width: calc(100vw - 52px);
+	}
+
+	.Warnings table tbody tr td:first-of-type {
+		border-radius: 0;
+		padding-left: 26px;
+		padding-right: 0;
+	}
+
+	.Warnings .Label {
+		border-radius: 0;
+		padding-left: 0;
+		padding-right: 26px;
+	}
+}

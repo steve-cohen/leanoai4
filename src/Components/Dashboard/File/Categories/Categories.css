@@ -1,0 +1,131 @@
+.Categories {
+	background: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(226, 227, 229);
+	padding: 5vw;
+}
+
+.Categories table {
+	border-spacing: 0;
+	color: rgb(76, 86, 107);
+	line-height: 22px;
+}
+
+.Categories table .Right {
+	text-align: right;
+}
+
+.Categories table tbody tr td {
+	padding: 14px 6px;
+	vertical-align: top;
+}
+
+.Categories table tbody tr td:first-of-type {
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	padding: 14px 4px 14px 26px;
+	white-space: pre;
+}
+
+.Categories table tbody tr td:last-of-type {
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	padding: 14px 26px 14px 4px;
+}
+
+.Categories table tbody tr .Labels {
+	font-weight: 500;
+	line-height: 24px;
+	white-space: pre;
+}
+
+.Categories table thead tr th {
+	color: rgb(32, 17, 59);
+	font-weight: 500;
+	padding: 6px;
+	text-align: left;
+}
+
+.Categories .Head {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.Categories .Head .Buttons {
+	border: 1px solid rgb(227, 227, 227);
+	border-radius: 6px;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+	color: rgb(0, 102, 204);
+	cursor: pointer;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+	transition: 0.2s;
+	width: fit-content;
+}
+
+.Categories .Head .Buttons:hover {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.Categories .Head .Buttons span {
+	display: inline-block;
+	padding: 8px 6px;
+	transition: 0.2s;
+}
+
+.Categories .Head .Buttons span:first-of-type {
+	padding-left: 12px;
+}
+
+.Categories .Head .Buttons span:hover {
+	color: rgb(32, 17, 59);
+}
+
+.Categories .Head .Buttons span:last-of-type {
+	padding-right: 12px;
+}
+
+.Categories .Head .Title {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+	.Categories {
+		width: 100%;
+	}
+
+	.Categories table tbody tr td {
+		display: block;
+	}
+
+	.Categories table tbody tr .Labels {
+		padding: 0 26px;
+		white-space: pre;
+	}
+
+	.Categories table tbody tr .Text {
+		display: block;
+		padding-left: 26px !important;
+		padding-right: 26px !important;
+		white-space: normal;
+		width: calc(100vw - 52px);
+	}
+
+	.Categories table thead {
+		display: none;
+	}
+
+	.Categories .Head .Title {
+		padding-left: 26px;
+	}
+
+	.Categories .End,
+	.Categories .Start {
+		display: inline-block;
+		font-weight: 500;
+	}
+}

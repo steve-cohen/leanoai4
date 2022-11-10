@@ -1,0 +1,44 @@
+.Clips {
+	position: relative;
+}
+
+.Clips .Loading {
+	padding-left: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+	.Clips {
+		border-radius: 0;
+		padding: 0;
+	}
+
+	.Clips .Head {
+		display: block;
+		padding: 26px 26px 0 26px;
+	}
+
+	.Clips .Head .Title {
+		margin-bottom: 14px;
+	}
+}
+
+.ClipsProcessing {
+	background: rgb(247, 250, 252);
+	height: 100vh;
+	position: absolute;
+	width: calc(100vw - 280px);
+	top: 0;
+	z-index: 10;
+}
+
+@media only screen and (max-width: 1680px) {
+	.ClipsProcessing {
+		width: calc(100vw - 220px);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.ClipsProcessing {
+		width: 100vw;
+	}
+}
